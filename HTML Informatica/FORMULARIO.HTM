@@ -1,0 +1,36 @@
+<FORM ACTION="mailto:dirección_de_email" METHOD="POST"ENCTYPE="TEXT/PLAIN">
+<BODY BGCOLOR="#ffffcc">
+Nombre
+<BR><INPUT TYPE="text" NAME="Apellido"> 
+
+<br>
+Apellido
+<BR><INPUT TYPE="text" NAME="Apellido"> 
+
+<BR>
+Comentarios:
+<BR><TEXTAREA NAME="Comentarios" ROWS="6" COLS="40"> 
+</TEXTAREA>   
+<P><INPUT TYPE="SUBMIT" VALUE="Enviar"><INPUT TYPE="RESET"
+VALUE="Borrar datos">
+</FORM>
+<IMG SRC="formulario.png" USEMAP="#mi_mapa">
+<SCRIPT LANGUAGE="JavaScript">
+<!--  
+///   Scroll en la barra de estado,  (C) Pedro Maicas, 1996.
+
+var txt=" deja tu comentario                               ";
+
+function scroll()
+{
+  window.status = txt;
+  txt = txt.substring(1, txt.length) + txt.charAt(0);
+  window.setTimeout("scroll()",150);
+}
+//-->
+
+</SCRIPT>
+
+
+<BODY onLoad="scroll();">
+
